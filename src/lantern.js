@@ -4,8 +4,6 @@ function Lantern(element, options) {
 	 * PUBLIC MEMBERS
 	 */
 
-	var that = this;
-
 	if (element === undefined) {
 		this.element = document.getElementById('lantern');
 	} else {
@@ -24,7 +22,9 @@ function Lantern(element, options) {
 	 * PRIVATE MEMBERS
 	 */
 
-	var img = that.element.getElementsByTagName('img')[0];
+	var that = this;
+	var img = this.element.querySelector('img');
+	var body = document.querySelector('body');
 
 
 	/*
@@ -34,15 +34,17 @@ function Lantern(element, options) {
 	/* Modifies given links to open lightbox */
 	function modLink(lantLink) {
 		lantLink.addEventListener('click', function(e) {
-			img.src = lantLink.getAttribute('href');
-			that.toggle();
-			e.preventDefault();
+			if(e.button === 0) {
+				img.src = lantLink.getAttribute('href');
+				that.toggle();
+				e.preventDefault();
+			}
 		});
 	}
 
 	/* Sets close button */
 	function setCloseBtn(){
-		var closeBtn = that.element.getElementsByTagName('button')[0];
+		var closeBtn = that.element.querySelector('button');
 
 		closeBtn.addEventListener('click', function(){
 			that.toggle();
@@ -60,8 +62,10 @@ function Lantern(element, options) {
 		value: function(){
 			if (this.element.className === this.showClass) {
 				this.element.className = '';
+				body.style.overflow = 'initial';
 			} else {
 				this.element.className = this.showClass;
+				body.style.overflow = 'hidden';
 			}
 		}
 	});
