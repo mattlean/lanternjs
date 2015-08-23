@@ -14,10 +14,17 @@ function Lantern(element, options) {
 
 	this.showClass = 'lantern-show';
 	if (options !== undefined) {
-		if (options['showClass'] !== undefined) {
-			this.showClass = options['showClass'];
+		if (options.showClass !== undefined) {
+			this.showClass = options.showClass;
 		}
 	}
+
+
+	/*
+	 * PRIVATE MEMBERS
+	 */
+
+	var img = that.element.getElementsByTagName('img')[0];
 
 
 	/*
@@ -27,6 +34,7 @@ function Lantern(element, options) {
 	/* Modifies given links to open lightbox */
 	function modLink(lantLink) {
 		lantLink.addEventListener('click', function(e) {
+			img.src = lantLink.getAttribute('href');
 			that.toggle();
 			e.preventDefault();
 		});
@@ -36,7 +44,7 @@ function Lantern(element, options) {
 	function setCloseBtn(){
 		var closeBtn = that.element.getElementsByTagName('button')[0];
 
-		closeBtn.addEventListener('click', function(e) {
+		closeBtn.addEventListener('click', function(){
 			that.toggle();
 		});
 	}
@@ -75,21 +83,14 @@ function Lantern(element, options) {
 	 * CONSTRUCTOR
 	 */
 
-	 setCloseBtn();
-	 this.modifyLinks();
+	setCloseBtn();
+	this.modifyLinks();
 }
 
 
 /* "main()" */
 var lantern = new Lantern();
 
-console.log(lantern);
-for (var foo in lantern) {
-    console.log(foo);
-}
-
-console.log('\n');
-Object.prototype.nonsense = 'hi';
 console.log(lantern);
 for (var foo in lantern) {
     console.log(foo);
