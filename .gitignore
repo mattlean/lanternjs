@@ -1,2 +1,5 @@
 src/bower_components/
 node_modules/
+.sass-cache/
+src/style.css
+src/style.css.map

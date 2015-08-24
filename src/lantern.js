@@ -18,6 +18,8 @@ function Lantern(element, options) {
 	}
 
 
+	var test = 'bl';
+
 	/*
 	 * PRIVATE MEMBERS
 	 */
