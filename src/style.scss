@@ -31,9 +31,10 @@ div#lantern img {
 div#lantern button {
 	width: 30px;
 	height: 30px;
-	margin: 6px 6px;
 	border: 0;
-	float: right;
+	position: absolute;
+	top: 6px;
+	right: 6px;
 	font: bold 18px Arial, Helvetica, sans-serif;
 	background-color: #000;
 	border-radius: 50%;

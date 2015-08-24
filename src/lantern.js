@@ -1,8 +1,13 @@
 /* Latern Class */
 function Lantern(element, options) {
 	/*
-	 * PUBLIC MEMBERS
+	 * BEGIN CONSTRUCTOR
 	 */
+	var that = this;
+	var body = document.querySelector('body');
+	this.html = '<div id="lantern"><img src="" alt=""><button>X</button></div>';
+
+	body.insertAdjacentHTML('beforeend', this.html);
 
 	if (element === undefined) {
 		this.element = document.getElementById('lantern');
@@ -16,17 +21,8 @@ function Lantern(element, options) {
 			this.showClass = options.showClass;
 		}
 	}
-
-
-	var test = 'bl';
-
-	/*
-	 * PRIVATE MEMBERS
-	 */
-
-	var that = this;
+	
 	var img = this.element.querySelector('img');
-	var body = document.querySelector('body');
 
 
 	/*
@@ -86,7 +82,7 @@ function Lantern(element, options) {
 
 
 	/*
-	 * CONSTRUCTOR
+	 * END CONSTRUCTOR
 	 */
 
 	setCloseBtn();
