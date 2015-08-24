@@ -1,10 +1,10 @@
 module.exports = function(grunt) {
 	//Project configuration
 	grunt.initConfig({
-		tag: {
-		  banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-		},
 		pkg: grunt.file.readJSON('package.json'),
+		tag: {
+		  banner: '/*! Lantern.js <%= pkg.version %> | www.mattlean.com */\n'
+		},
 		sass: {
 			dev: {
 				files: {
