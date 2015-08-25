@@ -1,9 +1,12 @@
 {
   "name": "lanternjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/IsaacLean/lanternjs",
   "authors": [
-    "Matthew Isaac Lean"
+    {
+      "name": "Matthew Isaac Lean",
+      "email": "http://mattlean.com"
+    }
   ],
   "main": "src/lantern.js",
   "license": "MIT",

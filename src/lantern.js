@@ -88,12 +88,3 @@ function Lantern(element, options) {
 	setCloseBtn();
 	this.modifyLinks();
 }
-
-
-/* "main()" */
-var lantern = new Lantern();
-
-console.log(lantern);
-for (var foo in lantern) {
-    console.log(foo);
-}

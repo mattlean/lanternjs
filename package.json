@@ -1,6 +1,6 @@
 {
   "name": "lanternjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lightweight, simple-to-use image lightbox.",
   "main": "src/lantern.js",
   "scripts": {
