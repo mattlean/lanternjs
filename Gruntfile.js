@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 		sass: {
 			dev: {
 				files: {
-					'src/style.css' : 'src/style.scss'
+					'src/lantern-minimal.css' : 'src/lantern-minimal.scss'
 				}
 			},
 			dist: {
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'dist/lantern-minimal.min.css' : 'src/style.scss'
+					'dist/lantern-minimal.min.css' : 'src/lantern-minimal.scss'
 				}
 			}
 		},
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 			files: ['src/lantern.js']
 		},
 		watch: {
-			files: ['src/style.scss', '<%= jshint.files %>'],
+			files: ['src/lantern-minimal.scss', '<%= jshint.files %>'],
 			tasks: ['sass:dev', 'jshint']
 		},
 		uglify: {
@@ -46,6 +46,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	//Default tasks
-	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('default', ['sass:dev', 'watch']);
 	grunt.registerTask('build', ['sass:dist', 'uglify']);
 };

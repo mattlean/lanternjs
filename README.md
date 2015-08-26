@@ -32,7 +32,7 @@ All you need to do load this script somewhere within your HTML document.
 
 For styling you can use the *Minimal* style, although it's recommended for you to create your own custom style to fit your page's style.
 
-The development version can be found as: ```src/style.scss```
+The development version can be found as: ```src/lantern-minimal.scss```
 
 The production version can be found as: ```src/lantern-minimal.min.css```
 
@@ -61,7 +61,7 @@ All your need to do is add the Lantern data attribute to the links like so...
 ...and you're done!
 
 #Working with the Source
-I use the following to maintain the codebase:
+The following is used to maintain the codebase:
 * [npm](https://npmjs.com) and [Bower](http://bower.io) for package management
 * [Grunt](http://gruntjs.com) for compiling [SASS](http://sass-lang.com), linting JavaScript with [JSHint](https://github.com/gruntjs/grunt-contrib-jshint), and building production versions of the script with [UglifyJS](https://github.com/gruntjs/grunt-contrib-uglify)
 * [normalize.css](https://necolas.github.io/normalize.css) for CSS rendering consistency between browsers when testing
@@ -70,12 +70,12 @@ I use the following to maintain the codebase:
 ###Default
 Command: ```grunt```
 
-Activates ```grunt watch``` which compiles SASS and lints with JSHint when it detects changes in ```src/style.scss``` and ```src/lantern.js```.
+Activates ```grunt watch``` which compiles SASS and lints with JSHint when it detects changes in ```src/lantern-minimal.scss``` and ```src/lantern.js```.
 
 ###Build
 Command: ```grunt build```
 
-Uses SASS and UglifyJS to build the minified versions of the CSS and JavaScript for production.
+Uses SASS and UglifyJS to build the minified versions of the CSS and JavaScript for production. Places built files in ```dist/```.
 
 #Future Features
 * Automatic mode

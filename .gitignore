@@ -1,5 +1,5 @@
 src/bower_components/
 node_modules/
 .sass-cache/
-src/style.css
-src/style.css.map
+src/lantern-minimal.css
+src/lantern-minimal.css.map
