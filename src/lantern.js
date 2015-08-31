@@ -61,6 +61,7 @@ function Lantern(element, options) {
 			if (this.element.className === this.showClass) {
 				this.element.className = '';
 				body.style.overflow = 'initial';
+				img.src = '';
 			} else {
 				this.element.className = this.showClass;
 				body.style.overflow = 'hidden';
