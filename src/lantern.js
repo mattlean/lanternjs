@@ -1,4 +1,4 @@
-/* Latern Class */
+/* Latern 0.2.0 */
 function Lantern(element, options) {
 	/*
 	 * BEGIN CONSTRUCTOR
@@ -41,11 +41,13 @@ function Lantern(element, options) {
 	}
 
 	/* Sets close button */
-	function setCloseBtn(){
+	function setClose(){
 		var closeBtn = that.element.querySelector('button');
 
-		closeBtn.addEventListener('click', function(){
-			that.toggle();
+		that.element.addEventListener('click', function(e){
+			if (e.target === closeBtn || e.target === that.element) {
+				that.toggle();
+			}
 		});
 	}
 
@@ -86,6 +88,6 @@ function Lantern(element, options) {
 	 * END CONSTRUCTOR
 	 */
 
-	setCloseBtn();
+	setClose();
 	this.modifyLinks();
 }
