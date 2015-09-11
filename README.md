@@ -1,5 +1,5 @@
 #Lantern.js
-*Version 0.1.2*
+*Version 0.2.0*
 
 A simple-to-use, lightweight, and customizable image lightbox.
 
