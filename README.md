@@ -1,16 +1,16 @@
 # Lantern.js
-*Version 0.2.0*
+*Version 0.2.1*
 
 A simple-to-use, lightweight, and customizable image lightbox.
 
 # Download
-You can download the script and source as a ZIP file from here:
+Choose one of the following options:
 
-[https://github.com/IsaacLean/lanternjs](https://github.com/IsaacLean/lanternjs)
+1. You can download an archived file from the [GitHub repository's releases page](https://github.com/IsaacLean/lanternjs/releases).
 
-Or you can download from Bower with this command:
+2. You can download from npm with this command: `npm install lanternjs`
 
-```bower install lanternjs```
+3. You can download from Bower with this command: `bower install lanternjs`
 
 # Why Use Lantern.js?
 There are a lot of other great lightbox solutions out there, but Lantern.js has some benefits over many of them:
@@ -38,7 +38,7 @@ The production version can be found as: ```src/lantern-minimal.min.css```
 
 Just like the JavaScript, all you need to do is load the CSS somewhere within your HTML document.
 
-##2. Create a Lantern Object
+## 2. Create a Lantern Object
 In your own JavaScript, create a new Lantern object:
 
 ```javascript

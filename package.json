@@ -1,15 +1,23 @@
 {
   "name": "lanternjs",
-  "version": "0.2.0",
-  "description": "A lightweight, simple-to-use image lightbox.",
+  "version": "0.2.1",
+  "description": "Lightweight image lightbox library",
   "main": "src/lantern.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IsaacLean/lanternjs.git"
   },
+  "files": [
+    "dist/**/*",
+    "src/**/*"
+  ],
+  "keywords": [
+    "lanternjs",
+    "lantern",
+    "lightbox",
+    "image",
+    "viewer"
+  ],
   "author": "Matthew Lean",
   "license": "MIT",
   "bugs": {
